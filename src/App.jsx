@@ -7,7 +7,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/Projects" element={<ProjectManagement />} />
         <Route path='/Billing' element={<BillingGeneration />} />
       </Routes>
