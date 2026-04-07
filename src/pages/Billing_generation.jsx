@@ -87,7 +87,7 @@ export default function BillingGeneration() {
           <div>
             <label className="text-m font-medium mb-2 block">Select Month</label>
             <select
-              className="border border-gray-400 rounded p-2 focus:outline-none focus:border-black"
+              className="border border-gray-400 rounded p-2 focus:outline-none focus:border-black cursor-pointer"
               value={month}
               onChange={(e) => setMonth(Number(e.target.value))}
             >

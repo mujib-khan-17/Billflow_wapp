@@ -31,7 +31,7 @@ export default function Login() {
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <header className="bg-blue-700 text-white py-3 px-6 shadow-md flex items-center justify-between">
         <div className="flex items-center space-x-3">
-          <img src="/addnectar_logo.png" alt="Logo" className="h-8 w-auto" />
+          {/* <img src="/addnectar_logo.png" alt="Logo" className="h-8 w-auto" /> */}
           <h1 className="text-xl font-semibold">Billflow</h1>
         </div>
       </header>
@@ -39,13 +39,13 @@ export default function Login() {
       <main className="flex flex-1 items-center justify-center px-4 py-10">
         <div className="w-full max-w-md bg-white p-8 shadow-md rounded-lg">
           
-          <div className="flex justify-center mb-6">
+          {/* <div className="flex justify-center mb-6">
             <img
               src="/addnectar_big_logo.png"
               alt="Addnectar Big Logo"
               className="h-16 w-auto"
             />
-          </div>
+          </div> */}
 
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>

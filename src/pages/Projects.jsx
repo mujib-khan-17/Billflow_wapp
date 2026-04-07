@@ -38,7 +38,7 @@ export default function ProjectManagement() {
 
   const fetchProjects = async (status = '', searchTerm = '') => {
     try {
-      let url = '/projects?';
+      let url = '/projects/?';
       if (status) url += `status=${encodeURIComponent(status)}&`;
       if (searchTerm) url += `search=${encodeURIComponent(searchTerm)}`;
       const res = await axiosInstance.get(url);
@@ -50,7 +50,7 @@ export default function ProjectManagement() {
 
   const fetchCompanies = async () => {
     try {
-      const res = await axiosInstance.get('/companies');
+      const res = await axiosInstance.get('/companies/');
       console.log("Fetched companies:", res.data);
       setCompanies(res.data);
     } catch (err) {
